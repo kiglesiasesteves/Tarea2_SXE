@@ -81,3 +81,21 @@ Hacemos el ping:
 ```bash
 ping google.com
 ```
+
+
+### **Crea un contenedor con el nombre 'dam_alp2'. ¿Puedes hacer ping entre los contenedores?**
+
+**Creación del contendor**
+
+```bash
+ sudo docker run -it --name dam_alp2 alpine
+```
+
+
+**¿Podemos hacer ping entre contenedores?**
+
+Sí, para ello utilizaremos el comando ping + la IP que ya habiamos conseguido en el apartado anterior del primer contenedor
+
+```bash
+ ping  172.17.0.2 
+```
