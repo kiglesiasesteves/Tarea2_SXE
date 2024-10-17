@@ -36,3 +36,17 @@ docker ps -a
 
 
 **El nombre es *reverent_hodgkin***
+
+### **Crea un contenedor con el nombre 'dam_alp1'. ¿Como puedes acceder a él?**
+
+**Creación del contenedor:**
+
+```bash
+sudo docker run -dit --name dam_alp1 alpine
+```
+
+**Acceder a el contenedor:**
+
+```bash
+sudo docker exec -it dam_alp1 sh
+```
