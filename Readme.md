@@ -126,5 +126,18 @@ Esta es la tabla:
 ![memoria](img/image-2.png)
 
 
+### **¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**
+Sí, con este comando podemos ver una tabla que representa lo que ocupó en nuestro disco duro
+
+
+```bash
+sudo docker stats
+```
+Esta es la tabla:
+
+![alt text](img/image-3.png)
+
+
+
 
 
