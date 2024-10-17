@@ -99,3 +99,32 @@ Sí, para ello utilizaremos el comando ping + la IP que ya habiamos conseguido e
 ```bash
  ping  172.17.0.2 
 ```
+
+### **Sal del terminal, ¿que ocurrió con el contenedor?**
+
+Para saber que es lo que ocurre con los contenedores podemos utilizar el comando:
+
+```bash
+sudo docker ps -a
+```
+
+Este comando nos muestra una tabla con el estado de los contenedores:
+
+![salidaterminal](img/image-4.png)
+
+### **¿Cuanta memoria en el disco duro ocupaste?**
+
+Con este comando podemos ver una tabla que representa lo que ocupó en nuestro disco duro
+
+
+```bash
+ sudo docker system df
+ ```
+
+Esta es la tabla:
+
+![memoria](img/image-2.png)
+
+
+
+
