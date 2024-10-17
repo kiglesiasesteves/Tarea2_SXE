@@ -54,7 +54,7 @@ Utilizamos el nombre del contenedor:
 sudo docker inspect dam_alp1 | grep IPA
 ```
 
-![IPaddres](image-1.png)
+![IPaddres](img/image-1.png)
 
 **Para hacer ping a google.com:** 
 
@@ -103,29 +103,32 @@ sudo docker ps -a
 
 Este comando nos muestra una tabla con el estado de los contenedores:
 
-![salidaterminal](image-4.png)
+![salidaterminal](img/image-4.png)
 
 ### **¿Cuanta memoria en el disco duro ocupaste?**
+
+Con este comando podemos ver una tabla que representa lo que ocupó en nuestro disco duro
+
 
 ```bash
  sudo docker system df
  ```
 
-Con este comando podemos ver una tabla que representa lo que ocupó en nuestro disco duro
+Esta es la tabla:
 
-
-![memoria](image-2.png)
+![memoria](img/image-2.png)
 
 
 ### **¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**
+Sí, con este comando podemos ver una tabla que representa lo que ocupó en nuestro disco duro
+
 
 ```bash
 sudo docker stats
 ```
+Esta es la tabla:
 
-Con este comando podemos ver una tabla que representa lo que ocupó en nuestro disco duro
-
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 
 
