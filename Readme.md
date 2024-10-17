@@ -50,3 +50,34 @@ sudo docker run -dit --name dam_alp1 alpine
 ```bash
 sudo docker exec -it dam_alp1 sh
 ```
+
+### **Comprueba que ip tiene y si puedes hacer un ping a google.com**
+
+**Para comprobar la IP**
+
+Utilizamos el nombre del contenedor:
+
+```bash
+sudo docker inspect dam_alp1 | grep IPA
+```
+
+![IPaddres](img/image-1.png)
+
+**Para hacer ping a google.com:**
+
+Se accede al contenedor:
+```bash
+docker exec -it dam_alp1 sh
+```
+
+Se instala iputils para poder hacer el ping:
+
+```bash
+apk add iputils
+```
+
+Hacemos el ping:
+
+```bash
+ping google.com
+```
